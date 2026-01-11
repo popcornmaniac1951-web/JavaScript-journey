@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ⁡⁣⁢⁣How the Rock Paper Scissor Game Works⁡ -->
+
+<!-- At first created Math.random() to get a random number -->
+<!-- Math.random() divided into 3 parts of 0 to 1/3 and 1/3 to 2/3 and 2/3 to 1 -->
+<!-- 0 to 1/3 for rock 1/3 to 2/3 for paper 2/3 to 1 for scissor -->
+<!-- Then the Math.random() will store in a variable called onNmber -->
+<!-- Then compare the onNumber with the 0 to 1/3 and 1/3 to 2/3 and 2/3 to 1 -->
+<!-- if the onNumber is between 0 to 1/3 then the comMove will be rock -->
+<!-- if the onNumber is between 1/3 to 2/3 then the comMove will be paper -->
+<!-- if the onNumber is between 2/3 to 1 then the comMove will be scissor -->
+<!-- Then the comMove will be stored in a variable called result -->
+
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>rock paper scissor</title>
+</head>
+
+<body>
+
+<h1>Rock Paper Scissos</h1>
+
+    <button onclick="
+
+    const onNmber = Math.random();
+
+    let comMove = '';
+
+            if(onNmber >= 0 && onNmber <= 1/3){
+
+            comMove = 'rock';
+
+            }
+
+            else if(onNmber >= 1/3 && onNmber <=2/3){
+
+            comMove = 'paper';
+
+            }
+
+            else{
+
+            comMove = 'scissor';
+
+            }
+
+    let result = '';
+
+            if(comMove == 'rock'){
+
+            result = 'tie';
+
+            }
+            else if(comMove == 'paper'){
+
+            result = 'you loose';
+
+            }
+            else{
+
+            result = 'you win'; 
+
+            }
+
+    alert(`Computer Got ${comMove} and you got Rock so you ${result}`);
+
+    ">Rock</button>
+
+<button onclick="
+
+onNmber = Math.random();
+comMove = '';
+
+
+if(onNmber >= 0 && onNmber < 1/3){
+comMove = 'rock';
+}
+else if(onNmber >= 1/3 && onNmber < 2/3){
+comMove = 'paper';
+}
+else{
+comMove = 'scissor';
+}
+
+
+result = '';
+if(comMove == 'rock'){
+
+result = 'you win';
+
+}
+else if(comMove == 'paper'){
+
+result = 'tie';
+
+}
+else{
+
+result = 'you loose';
+
+}
+
+alert(`Computer Got ${comMove} and you got paper so you ${result}`);
+
+
+
+">Paper</button>
+
+<button onclick="
+
+onNmber = Math.random();
+comMove = '';
+
+if(onNmber >= 0 && onNmber < 1/3){
+comMove = 'rock';
+}
+else if(onNmber >= 1/3 && onNmber < 2/3){
+comMove = 'paper';
+}
+else{
+comMove = 'scissor';
+}
+
+
+result = '';
+if(comMove == 'rock'){
+
+result = 'you loose';
+
+}
+else if(comMove == 'paper'){
+
+result = 'you win';
+
+}
+else{
+
+result = 'tie';
+
+}
+
+alert(`Computer Got ${comMove} and you got scissor so you ${result}`);
+
+
+">Scissor</button>
+
+<script>
+
+// if any variable we create inside the  {..}  will only be available inside the {..} in the if conditions
+// it is caled  ⁡⁣⁣⁢scope⁡
+// it wont affect the variables outside the {..}
+// scope help as avoiding naming conflicts
+// to access  a variable inside the {..} we use to make the vaiable outside the {..}
+// so it can access by the variable inside the {..}
+// ⁡⁣⁣⁢var⁡ cannot follow the rules of scope
+// like an example when we create the variable called inOne inside the {..} it will conflict
+// with the variable called inOne outside the {..}.this breaks the rule of scope
+// thats why we use let or const instead of var
+// ⁡⁣⁣⁢how to write js code⁡
+// ⁡⁣⁣⁢first need algorithm⁡
+// ⁡⁣⁣⁢second need the code⁡
+
+</script>
+</body>
+
+</html>

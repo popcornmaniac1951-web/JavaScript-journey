@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- Lesson 5 about JavaScript variables -->
+<!-- doctype tells to use latest version of html in the browser -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <!-- linking the style.css -->
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            font-family: poppins;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!------------------------------------------------------------------------------------------------>
+
+    <h1>hello JavaScript variables</h1>
+    <!-- we can make this in two types using the normal way or using the interpolation -->
+
+    <!-- using-the-normal-way -->
+    <h1>using normal way</h1>
+
+    <button onclick="console.log('cart quantity:',cart_quantity);">show quantity</button>
+    <button onclick="console.log('cart quantity:',cart_quantity = cart_quantity + 1);">add</button>
+    <button onclick="console.log('cart quantity:',cart_quantity = cart_quantity - 1);">delete</button>
+    <button onclick="console.log('cart quantity:',cart_quantity = cart_quantity + 5);" ;>add 5</button>
+    <button onclick="console.log('cart quantity:',cart_quantity = cart_quantity - 5);" ;>delte 5</button>
+    <button onclick="console.log('cart quantity:', cart_quantity = 0);">reset</button>
+    <br>
+    <!-- shortcut -->
+    <button onclick="console.log('cart quantity:',cart_quantity);">show quantity</button>
+    <button onclick="console.log('cart quantity:',cart_quantity += 1);">add</button>
+    <button onclick="console.log('cart quantity:',cart_quantity -= 1);">delete</button>
+    <button onclick="console.log('cart quantity:',cart_quantity += 5);" ;>add 5</button>
+    <button onclick="console.log('cart quantity:',cart_quantity -= 5);" ;>delte 5</button>
+    <button onclick="console.log('cart quantity:', cart_quantity = 0);">reset</button>
+
+
+    <!-- using-interpolation -->
+    <h1>using interpolation way</h1>
+
+    <button onclick="console.log(`cart quantity: ${cart_quantity}`);">show quantity</button>
+    <button onclick=" cart_quantity = cart_quantity + 3; console.log(`cart quantity:${cart_quantity}`)">add
+        inter</button>
+    <button onclick=" cart_quantity = cart_quantity - 3; console.log(`cart quantity:${cart_quantity}`)">delete
+        inter</button>
+    <button onclick=" cart_quantity = 0; console.log(`cart quantity:${cart_quantity}`)">reset inter</button>
+
+    <!-- calculator -->
+
+    <!------------------------------------------------------------------------------------------------>
+
+</body>
+
+<!-- script/javascript linking -->
+
+<script src="index.js"></script>
+
+<!-- script for variables.html -->
+
+<script>
+
+    // introduction to variables
+    // what is a variable ?
+    // == Variable is used to store data
+
+    // let variable = "hello";
+    // console.log(variable);
+
+    // let calcul = 2 + 2;
+    // console.log(calcul)
+
+    // console.log(calcul + 5);
+
+    // let result = calcul + 2;
+    // console.log(result);
+
+    // let mes = "Hello World";
+    // console.log(mes);
+
+ 
+    //---------------sytax-rules-----------
+
+    // var , let and const used to create a variable
+    // we cannot use the special words or keywords like let and const or just use let1 or const1
+    // cannot start with a number
+    // we cant use special characters we can use $ and _ . others are not useable
+    // semicolon means the end of an instruction like end of an sentence.we need semicolons to seperate the instructions
+    // we cant spaces in between variable name
+    // use camel case when more than 1 word appear . use like this camelCase firstword not capitalise nad secondword capitalise
+    // next one is pascalcse .here every word use capitalise .like this CamelCase
+    // kebab-case use in html and css to name file and call class.like this home-one.html , slider-banner{}
+    // snake case .like this camel_case used to name variables
+    // name variable with not short and not long like this no=c yes=cap_case
+
+
+    // how to change the value that is saved inside the variable
+
+    // let mes = 2; asigning a value to variable--------------
+    // console.log(mes);
+
+    // mes = 5;   re-asigning a value to variable------------- re-assign a varibale many time as we need
+    // console.log(mes);
+
+    // mes = 40;
+    // mes = mes + 90;
+    // console.log(mes);----------increasing a value of a variable
+
+    let cart_quantity = 0;
+    //<<<<<<--------------------;----------------------->>>>>>
+
+    // <<<<-----------------------------const---------------------------------->>>>
+
+    // console.log(cart_quantity);
+    // while create variable with const its value still remain constant than let.let can be changed
+
+    // const vari_abel = 123;
+    // console.log(vari_abel);
+
+    // <<<<-----------------------------var---------------------------------->>>>
+
+    // var is the original way to create a variable in javascript . var means variabel.however var some issues
+    // . due to that we cannot use in the latest version .var is like let we can change the values of var
+
+
+    // var vari_abel = 123;
+    // console.log(vari_abel);
+
+
+    // var var_one = 23;
+    // console.log(typeof 23);
+
+    // <<<<----------------------exercises--------------------->>>>
+
+    let name_user = 'adithyan';
+    console.log(name_user);
+    console.log(`My name is ${name_user}`);
+    console.log('My name is ' + name_user);
+
+    let cost = (1 * 5) + (2 * 3) + (1 * 9)
+    console.log(cost);
+    console.log(`Cost of food is $${cost}`);
+    let tax = cost * 0.1;
+    console.log(`Tax of the food is $${tax}`);
+    let totalCost = cost + tax;
+    console.log(`Total cost is $${totalCost}`);
+    console.log(totalCost);
+
+
+</script>
+
+</html>

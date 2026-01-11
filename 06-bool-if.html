@@ -1,0 +1,249 @@
+<!------------⁡⁢⁣⁢Lesson 6 = Booleans and if statements⁡------------>
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans and if Statements</title>
+</head>
+
+<body>
+
+
+    <script>
+
+// ⁡⁣⁣⁢Boolean value represents whether something is true or false⁡
+
+// console.log(3 > 7); // false
+// console.log(7 > 3); // true⁡
+
+// ⁡⁣⁢⁣Syntax:⁡
+// ⁡⁣⁣⁢No need to write 'true' or 'false' inside quotes. Use true / false directly.⁡
+
+// ⁡⁣⁢⁣Comparison operators:⁡
+// >   greater than
+// <   less than
+// >=  greater than or equal to
+// <=  less than or equal to
+// ==  equal (value only)
+// === equal (value + type)
+
+// console.log(5 == '5.00');   // true
+// console.log(5 === '5.00');  // false
+
+// !=  not equal
+// !== not equal (value + type)
+
+// ⁡⁣⁣⁢Comparison operators have lower priority than arithmetic operators.⁡
+
+
+// ⁡⁣⁢⁣If statements:⁡
+
+// if (true) {
+//   console.log("hello");
+// }
+
+// if (false) {
+//   console.log("nobody is home");
+// }
+
+// if (2 > 5) {
+//   console.log("true");
+// } else {
+//   console.log("false");
+// }
+
+// const age = 48;
+
+// if (age <= 18) {
+//   console.log("you can't drive");
+// } else if (age > 40) {
+//   console.log("another branch with another condition");
+// } else {
+//   console.log("you can drive");
+// }
+
+// ⁡⁣⁢⁣One branch if statement:⁡
+// if (age > 30) console.log("this line of code works");
+
+// ⁡⁣⁢⁣Multiple branch if statement:⁡
+// if (age > 30) {
+//   console.log("this line of code works");
+//   console.log("this line of code works");
+//   console.log("this line of code works");
+// }
+
+
+// ⁡⁣⁢⁣Logical OR operator:⁡
+
+// ⁡⁣⁣⁢Check if any one side are true⁡
+
+// if (age > 30 || age < 40) {
+//   console.log("this line of code works");
+// }
+
+// ⁡⁣⁢⁣Logical AND operator:
+
+// ⁡⁣⁣⁢Check if two sides are true⁡
+
+// if (age > 30 && age < 40) {
+//   console.log("this line of code works");
+// }
+
+// let b = 20;
+// let a = 140;
+// console.log(b || a);
+
+
+
+
+// ⁡⁣⁢⁣Logical NOT operator:⁡
+
+// ⁡⁣⁣⁢Converts true into false and false into true⁡ 
+
+// console.log(!true);  // false
+// console.log(!false); // true
+
+
+// ⁡⁣⁢⁣Truthy and falsy values:⁡
+
+// if (4) {
+//   console.log("truthy");
+// }
+
+// if (0) {
+//   console.log("truthy"); // will not run
+// }
+
+// ⁡⁣⁢⁣Falsy values: 0, "", null, undefined, NaN⁡
+
+// if ("") {
+//   console.log("truthy");
+// }
+
+// if (null) {
+//   console.log("truthy");
+// }
+
+// if (undefined) {
+//   console.log("truthy");
+// }
+
+// if (NaN) {
+//   console.log("truthy");
+// }
+
+
+// ⁡⁣⁢⁣Short-circuit logic:⁡
+
+// let cartQuan = 5;
+
+// if (cartQuan) {
+//   console.log("Cart has items.");
+// }
+
+// ⁡⁣⁢⁣Shortcut version:⁡
+
+// cartQuan && console.log("Cart has items.");
+// cartQuan || console.log("Cart is empty.");
+
+
+// console.log(!0); // true
+
+
+// ⁡⁣⁢⁣Special falsy values:⁡
+
+// A = 0
+// B = ""
+// C = null
+// D = undefined (value not defined)
+// E = NaN (Not a Number from invalid math)
+
+// Example:
+// let a;
+// console.log(a); // undefined
+
+// console.log("text" / 2); // NaN
+
+// ⁡⁣⁢⁣--------------SHORTCUT-FOR-IF-STATEMENTS--------------⁡
+
+// ⁡⁣⁢⁣Ternary operator:⁡
+
+// true ? console.log("true") : console.log("false");
+// const terOne = true ? 'truthy' : 'falsy';
+
+// ⁡⁣⁣⁢? 'truthy'  is like if⁡ 
+// ⁡⁣⁣⁢: 'falsy'   is like else in a if condition⁡
+
+
+// Equivalent to:
+// if (true) {
+//   console.log("true");
+// } else {
+//   console.log("false");
+// }
+
+// false ? console.log("true") : console.log("false");
+
+// ⁡⁣⁣⁢We can save the ternary operation into a variable⁡
+
+// const terOne = true ? 'truthy' : 'falsy';
+// console.log(terOne);
+
+// ⁡⁣⁣⁢We can use trythy and falsy values like turth and false⁡
+
+//  const hop = 0 ? 'truthy' : 'falsy'; ⁡⁣⁣⁢falsy will print⁡
+//  console.log(hop);
+
+// ⁡⁣⁢⁣The Guard operator ⁡
+
+// ⁡⁣⁣⁢is also known as the And operator &&⁡
+
+//Example: false && 'hello' 
+// ⁡⁣⁣⁢And operator will work if the 2 sides are true⁡
+//But the above condition will not work because the left side is false and the right side is a string
+//So it will break.here the 1st one is false thats why it breaks
+
+// ⁡⁣⁣⁢take an another condition⁡
+// const mer = 5 && 'hello';
+// Here the both values are true and print the hello
+
+// ⁡⁣⁣⁢This gaurd operator is like this⁡ 
+
+// let mer;
+
+// if(condition){
+//     mer = 'hello';
+//     console.log(mer);
+// }
+
+// ⁡⁣⁢⁣Default operator⁡
+
+// ⁡⁣⁣⁢is also known as the or operator ||⁡
+// is also work like the guard operator 
+// Example:
+// const currency = 'usd' || 'eur';
+// the first condition is true so it will stop there and print usd
+// take another one 
+// const currency = undefined || 'eur';
+// here first is wrong and check the second .second is true so it will print
+
+// Default is like this
+
+    // let currency;
+
+    // if(!condition)
+    // {
+    // currency = 'usd';
+    // }
+
+
+
+
+    </script>
+</body>
+
+</html>

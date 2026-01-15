@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to extract a substring from a string</title>
+</head>
+
+<body>
+
+    <script>
+
+        // slice(start, end) from 0 to before 4
+        let text = "Hello World Its me";
+        let res = text.slice(0, 4);
+        console.log(res);
+
+        let vehicle = "Bmw m5 cs f90";
+        let gear = vehicle.slice(0, 3);
+        console.log(gear);
+
+        let movie = "Ready player one";
+        let mov = movie.slice(0, 5);
+        console.log(mov);
+
+        // In this example, slice(0, 5) extracts characters starting from index 0 up to but not including index 5. As a result, the word Hello is extracted.
+        // If you omit the second parameter, slice() will extract everything from the start index to the end of the string:
+        let world ="india is my country";
+        let ind = world.slice(1);
+        console.log(ind);
+
+        let word = "javascript is a programming language";
+        let pgn = word.slice(-1);
+        let pgm = word.slice(-2);
+        console.log(pgn);
+        console.log(pgm);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment And Decrement Operators</title>
+</head>
+
+<body>
+    <script>
+
+        //postfix increment
+        let num = 6;
+        let result = (num++);
+        console.log(result);
+        console.log(num);
+        //prefix increment
+        let num1 = 6;
+        let result1 = (++num1);
+        console.log(result1);
+        console.log(num1);
+        //decrement
+        let x = 5;
+        console.log(--x); // 4
+        console.log(x); // 4
+
+        let y = 5;
+        console.log(y--); // 5
+        console.log(y); // 4
+
+        let a = 5;
+        let b = ++a;
+        console.log(b); // 6 (a was incremented before assignment)
+
+        let c = 5;
+        let d = c++;
+        console.log(d); // 5 (c was incremented after assignment)
+    </script>
+</body>
+
+</html>

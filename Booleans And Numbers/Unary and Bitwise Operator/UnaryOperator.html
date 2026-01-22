@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unary Operator</title>
+</head>
+
+<body>
+    <script>
+        //unary plus operator
+        const strq = '42';
+        const strToNum = +strq;
+
+        console.log(strToNum); // 42
+        console.log(typeof strq); // string
+        console.log(typeof strToNum); // number
+
+
+        //unary minus operator
+        const str = '42';
+        const strToNegativeNum = -str;
+
+        console.log(strToNegativeNum); // -42
+        console.log(typeof str); // string
+        console.log(typeof strToNegativeNum); // number
+
+        //logical not operator
+
+        let isOnline = true;
+        console.log(!isOnline); // false
+        let isOffline = false;
+        console.log(!isOffline); // true
+
+        //bit wise not operator
+        const num = 5; // The binary for 5 is 00000101
+        console.log(~num); // -6
+
+        //void operator
+        const result = void (2 + 2);
+
+        console.log(result); // undefined
+
+        //type of operator
+
+        const value = 'Hello world';
+
+        console.log(typeof value); // string
+    </script>
+
+</body>
+
+</html>

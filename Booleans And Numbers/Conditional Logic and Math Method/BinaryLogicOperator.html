@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Logic Operator</title>
+</head>
+
+<body>
+    <script>
+
+        const result = true && 'hello';
+
+        console.log(result); // hello
+
+        const results = 0 && 3;
+
+        console.log(results); // 0
+
+        const resultd = false && 0;
+
+        console.log(resultd); // false
+
+        if (2 < 3 && 3 < 4) {
+            console.log('The if block runs');
+        } else {
+            console.log('The else block runs');
+        }
+
+        const resul = 'This is truthy' || false;
+
+        console.log(resul); // This is truthy
+
+        const resut = 0 || 'This is truthy';
+
+        console.log(resut); // This is truthy
+
+        let userInput;
+
+        if (userInput || 'Guest') {
+            console.log('A user is present');
+        } else {
+            console.log('No user detected');
+        }
+
+        const esult = null ?? 'default';
+
+        console.log(esult); // default
+
+        const userSettings = {
+            theme: null,
+            volume: 0,
+            notifications: false,
+        };
+
+        let theme = userSettings.theme ?? 'light';
+        console.log(theme); // light
+        
+    </script>
+
+</body>
+
+</html>

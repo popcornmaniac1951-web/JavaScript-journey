@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Are Arrow Functions, and How Do They Work</title>
+</head>
+
+<body>
+    <script>
+        function add(a, b) {
+            return a + b;
+        }
+
+        const add = (a, b) => a + b;
+
+        const greet = name => "Hello " + name;
+
+        const sum = (a, b) => a + b;
+
+        const sayHi = () => "Hi";
+
+        const area = (w, h) => {
+            let result = w * h;
+            return result;
+        };
+
+        (a, b) => a + b
+
+        const isAdult = age => age >= 18;
+
+        console.log(isAdult(20)); // true
+        console.log(isAdult(15)); // false
+
+        const checkEvenOdd = (num) => {
+            if (num % 2 == 0) {
+                return "even";
+            }
+            else {
+                return "odd";
+            }
+        }
+
+        const cheevenodd = (numb) => (numb % 2 == 0)? "even" : "odd";
+
+        const calculateTotal = (price) => price + (price * 0.18);
+
+        console.log(calculateTotal(100));
+
+    </script>
+
+</body>
+
+</html>

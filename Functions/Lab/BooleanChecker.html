@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean Checker</title>
+</head>
+
+<body>
+    <script>
+        function booWho(bool) {
+            return typeof bool === "boolean";
+        }
+        booWho(true);            // true  ✅ (boolean)
+        booWho(false);           // true  ✅ (boolean)
+
+        booWho([1, 2, 3]);       // false ❌ (array)
+        booWho([].slice);        // false ❌ (function)
+        booWho({ a: 1 });        // false ❌ (object)
+        booWho(1);               // false ❌ (number)
+        booWho(NaN);             // false ❌ (number)
+        booWho("a");             // false ❌ (string)
+        booWho("true");          // false ❌ (string)
+        booWho("false");         // false ❌ (string)
+
+    </script>
+</body>
+
+</html>

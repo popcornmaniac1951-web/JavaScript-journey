@@ -23,3 +23,22 @@ console.log(finaloutput);
 }
 
 emailcheck('adithyants374@gmail.com');
+
+
+function maskEmail(email) {
+
+  let domain = email.split('@');
+  let dom1 = domain[0];
+  let dom2 = domain[1];
+
+  let firstlet = dom1[0];
+  let lastlet = dom1[dom1.length - 1];
+
+  let star = '*'.repeat(dom1.length - 2);
+
+  return firstlet + star + lastlet + '@' + dom2;
+}
+
+let email = "apple.pie@example.com";
+
+console.log(maskEmail(email));

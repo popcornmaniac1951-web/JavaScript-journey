@@ -118,3 +118,13 @@ let sentence9 = "Hello, World!";
 let substring = sentence9.substring(7, 12);
 console.log(substring);  // "World"
 
+//1.18 typeof a variable
+const wholeNumber = 50;
+const decimalNumber = 4.5;
+const negativeNumber = -7;
+
+console.log(typeof wholeNumber); // number
+console.log(typeof decimalNumber); // number
+console.log(typeof negativeNumber); // number
+
+

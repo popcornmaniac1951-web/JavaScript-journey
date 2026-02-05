@@ -1,28 +1,28 @@
 let count = 0;
 
-function cardCounter(card){
-  
- if(typeof card === 'number'){
+function cardCounter(card) {
 
-    if(card >= 2 && card <= 6){
-      count = ++count;
-      console.log(`${card} ${count} ,bet`);
-    }
-    else if(card >=7 && card <= 9){
+    if (typeof card === 'number') {
 
-      count = count;
-      console.log(`${card} ${count} ,hold`)
+        if (card >= 2 && card <= 6) {
+            count = ++count;
+            console.log(`${card} ${count} ,bet`);
+        }
+        else if (card >= 7 && card <= 9) {
 
+            count = count;
+            console.log(`${card} ${count} ,hold`)
+
+        }
+        else {
+            count = --count;
+            console.log(`${card} ${count} ,hold`);
+        }
     }
-    else{
-      count = --count;
-      console.log(`${card} ${count} ,hold`);
+    else if (typeof card === "string") {
+        count = --count;
+        console.log(`${card} ,hold`)
     }
-  }
-  else if (typeof card === "string"){
-count = --count;
-console.log(`${card} ,hold`)
-  }
 
 }
 

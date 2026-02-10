@@ -14,3 +14,4 @@ let gta = ['hello','world','is','me'];
 
 console.log(gta.length);
 console.log(gta[0],' adithyan');
+

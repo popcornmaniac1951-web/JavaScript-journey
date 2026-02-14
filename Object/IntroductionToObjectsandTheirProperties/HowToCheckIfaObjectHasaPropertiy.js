@@ -5,7 +5,7 @@ const person = {
     age : 34,
     place : "angamaly",
     qualification : "BCA"
-}
+};
 
 console.log(person.hasOwnProperty("name"));
 console.log("name" in person);

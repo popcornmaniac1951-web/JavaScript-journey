@@ -3,7 +3,7 @@ const person ={
     age : 34,
     location : "angamaly",
     qualification : "BCA"
-}
+};
 
 console.log(person.name);
 console.log(person['name']);
@@ -18,7 +18,7 @@ const home = {
     homenathan: "shaji",
     hommemother : 'sheela',
     monnamon : 'adithyan'
-}
+};
 
 console.log(home.monnamon + ' is a good boy with hardworking mindset.');
 

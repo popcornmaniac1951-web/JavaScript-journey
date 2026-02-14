@@ -6,7 +6,7 @@ const person = {
     name : "Adithyan",
     age : 20,
     qualification : "BCA"
-}
+};
 
 console.log(person.name);   //using the dot
 console.log(person['name']);//using the bracket notation

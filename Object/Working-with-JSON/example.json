@@ -1,0 +1,7 @@
+{
+    "name" : "athul",
+    "age" : 20,
+    "place" : "manjapra",
+    "qualification" : "BCA",
+    "list of courses": ["Mathematics", "Physics", "Computer Science"]
+}

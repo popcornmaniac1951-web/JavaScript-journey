@@ -1,40 +1,135 @@
-----------FreecodeCamp JavaScript-----------
+===============================
+JavaScript Basics – Simple Guide
+===============================
 
-            Build a Greeting Bot, Completed
-            Workshop
-            Build a JavaScript Trivia Bot, Completed
-            Lab
-            Build a Sentence Maker, Completed
-            Lab
 
-            Working with Data Types, Completed
-            Theory
-            JavaScript Variables and Data Types Review, Completed
-            Review
-            JavaScript Variables and Data Types Quiz, Completed
-            Quiz
+1. VARIABLES
+-------------------------------
+A variable is a container that stores data.
+We use variables to save values so we can use them later.
 
-Working with Strings in JavaScript, Completed
-Theory
+Example:
 
-Build a Teacher Chatbot, Completed
-Workshop
+let name = "Adithyan";
+let age = 20;
 
-Working with String Character Methods, Completed
-Theory
+Here:
+name stores text.
+age stores a number.
 
-Working with String Search and Slice Methods, Completed
-Theory
 
-Build a String Inspector, Completed
-Workshop
+2. STRING
+-------------------------------
+A string is text.
+Strings are written inside quotes (" " or ' ').
 
-Working with String Formatting Methods, Completed
-Theory
+Example:
 
-Build a String Formatter, Completed
-Workshop
+let message = "Hello World";
+console.log(message);
 
-Working with String Modification Methods, Completed
-Theory
+Output:
+Hello World
 
+Strings are used for names, messages, emails, etc.
+
+
+3. NUMBER
+-------------------------------
+Numbers are used for math and counting.
+They do NOT need quotes.
+
+Example:
+
+let price = 100;
+let total = price + 50;
+
+console.log(total);
+
+Output:
+150
+
+
+4. BOOLEAN
+-------------------------------
+A boolean has only two values:
+true or false.
+
+It is used for decisions.
+
+Example:
+
+let isLoggedIn = true;
+
+if (isLoggedIn) {
+  console.log("Welcome!");
+}
+
+Booleans help control program flow.
+
+
+5. FUNCTIONS
+-------------------------------
+A function is a block of code that performs a task.
+We create it once and use it many times.
+
+Example:
+
+function greet(name) {
+  return "Hello " + name;
+}
+
+console.log(greet("Adithyan"));
+
+Output:
+Hello Adithyan
+
+Functions make code reusable.
+
+
+6. ARRAYS
+-------------------------------
+An array stores multiple values in one variable.
+Values are stored in order.
+
+Example:
+
+let fruits = ["Apple", "Banana", "Mango"];
+
+console.log(fruits[0]);   // Apple
+console.log(fruits.length); // 3
+
+Arrays are useful when storing lists.
+
+
+7. OBJECT
+-------------------------------
+An object stores data using key-value pairs.
+
+Example:
+
+let person = {
+  name: "Adithyan",
+  age: 20,
+  city: "Angamaly"
+};
+
+console.log(person.name);      // Adithyan
+console.log(person["age"]);    // 20
+
+Objects are used to represent real-world things.
+
+
+===============================
+Summary
+===============================
+
+Variable → stores data
+String → text
+Number → numeric value
+Boolean → true or false
+Function → reusable block of code
+Array → list of values
+Object → key-value data structure
+
+Master these fundamentals and you build a strong foundation in JavaScript.

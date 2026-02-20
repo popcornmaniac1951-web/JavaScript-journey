@@ -1,0 +1,223 @@
+🎯 Assignment #1 — Build a Professional Prompt Template
+
+You are going to design a reusable prompt template for:
+
+Reviewing your PHP Expense Tracker project.
+
+This is not a random prompt.
+This should look like something a company would actually use internally.
+
+🧩 Your Prompt MUST Include
+1️⃣ Role Definition
+
+Assign AI a clear identity.
+
+Example direction (don’t copy — build your own):
+
+Act as a senior backend engineer with 10+ years of experience in PHP, MySQL, and web security.
+
+2️⃣ Context Section
+
+Explain what the project is.
+
+Example structure:
+
+Project purpose
+
+Tech stack
+
+What features it includes
+
+What stage it is in (MVP / production-ready)
+
+3️⃣ Clear Task Instructions
+
+Tell the AI to:
+
+Analyze code quality
+
+Detect security vulnerabilities
+
+Identify performance bottlenecks
+
+Suggest structural improvements
+
+Suggest scalability improvements
+
+Flag bad practices
+
+4️⃣ Force Structured Output
+
+Very important.
+
+Tell it to return response in this format:
+
+Executive Summary
+
+Security Issues (with severity levels: Low / Medium / High / Critical)
+
+Performance Issues
+
+Code Quality Review
+
+Scalability Risks
+
+Improvement Recommendations
+
+Refactored Example (if needed)
+
+Structured thinking = professional prompting.
+
+5️⃣ Add Constraints
+
+For example:
+
+If insufficient information, say “Insufficient Information.”
+
+Do not assume missing architecture.
+
+Do not generate unnecessary code unless requested.
+
+Be concise but precise.
+
+Constraints = control.
+
+🧠 Why This Matters
+
+When you build prompts like this, you are:
+
+Thinking like a system architect
+
+Reducing hallucinations
+
+Increasing output reliability
+
+Practicing structured engineering thinking
+
+This improves your coding brain directly.
+
+===================MyVersion=================
+
+ROLE:
+act as a senior backend engineer with 10+ years of experience in PHP,MySQL and web security 
+
+CONTEXT:
+my project name is expense tracker.i used html,css,and js for frend end and backend using php and the data base is MySQL.
+mainly it is a daily usable expense tracking web application.by this application a user can register to it and make a account in it.
+then he can add his expenses and incomes .so by adding expenses and incomes he can analyse his finaltial state and make good desicions to manage money.
+he can filter data through daily,monthly,yearly wise.that is the project .currently the frendend section is complete and backend also complete .mysql 
+works well.admin panel also added for user management.so basically production of the project is complete 
+
+TASK:
+ Analyze code quality
+
+Detect security vulnerabilities
+
+Identify performance bottlenecks
+
+Suggest structural improvements
+
+Suggest scalability improvements
+
+Flag bad practices 
+OUTPUT FORMAT:
+Executive Summary
+
+Security Issues (with severity levels: Low / Medium / High / Critical)
+
+Performance Issues
+
+Code Quality Review
+
+Scalability Risks
+
+Improvement Recommendations
+
+Refactored Example (if needed) 
+CONSTRAINTS:
+If insufficient information, say “Insufficient Information.”
+
+Do not assume missing architecture.
+
+Do not generate unnecessary code unless requested.
+
+Be concise but precise.
+
+
+=========================GoodOne==========================
+
+ROLE:
+Act as a senior backend architect and security auditor with 10+ years of experience in PHP, MySQL,
+ secure web application design, and OWASP Top 10 compliance. Think critically and evaluate both code-level and architectural decisions.
+
+CONTEXT:
+Project Name: Expense Tracker
+
+Purpose:
+A daily-use financial tracking web application allowing users to:
+- Register and authenticate accounts
+- Add, edit, and delete expenses and income
+- Filter records by daily, monthly, and yearly views
+- View aggregated financial summaries
+- Admin panel for user management
+
+Tech Stack:
+- Frontend: HTML, CSS, JavaScript
+- Backend: PHP (procedural/MVC specify if applicable)
+- Database: MySQL
+- Authentication: (Specify if using sessions, JWT, etc.)
+- Password Hashing: (Specify method if known)
+- Deployment: (Local / Shared Hosting / VPS – if applicable)
+
+Project Status:
+Feature-complete and considered production-ready.
+
+TASK:
+Perform a comprehensive technical audit covering:
+
+1. Code Quality Assessment
+2. Security Vulnerability Detection (aligned with OWASP Top 10)
+3. Performance Bottleneck Analysis
+4. Architectural Design Review
+5. Scalability Evaluation
+6. Best Practice Violations
+7. Maintainability & Technical Debt Review
+
+Prioritize critical issues first.
+
+OUTPUT FORMAT:
+1. Executive Summary (overall risk level and maturity assessment)
+
+2. Security Issues
+   - Issue Description
+   - Severity Level (Low / Medium / High / Critical)
+   - Exploitation Risk Scenario
+   - Recommended Fix
+
+3. Performance Issues
+   - Root Cause
+   - Impact Level
+   - Optimization Recommendation
+
+4. Code Quality Review
+   - Strengths
+   - Weaknesses
+   - Maintainability Score (1-10 with reasoning)
+
+5. Scalability Risks
+   - Short-Term Risks
+   - Long-Term Growth Concerns
+
+6. Improvement Roadmap
+   - Immediate Fixes (Quick Wins)
+   - Medium-Term Improvements
+   - Long-Term Architectural Enhancements
+
+7. Optional Refactored Code Example (Only if critical improvement required)
+
+CONSTRAINTS:
+- If insufficient information is provided, state “Insufficient Information.”
+- Do not assume missing architecture.
+- Do not fabricate vulnerabilities.
+- Do not rewrite the entire project unless critical.
+- Keep analysis precise and technically rigorous.

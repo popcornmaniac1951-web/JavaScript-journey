@@ -1,0 +1,118 @@
+🧭 6-Month Prompt Engineering Roadmap (Developer-Focused)
+
+We’re going to build this in layers — foundation → control → systems → automation.
+
+🔹 MONTH 1: Cognitive Foundations
+
+Objective: Understand how LLMs think so you can control outputs.
+
+Study:
+
+Tokens & context window
+
+Temperature & determinism
+
+Zero-shot vs Few-shot
+
+Chain-of-thought reasoning
+
+Hallucination patterns
+
+Instruction hierarchy
+
+Understand ecosystem players:
+
+OpenAI
+
+Anthropic
+
+Google DeepMind
+
+You don’t need research-level depth.
+You need architectural awareness.
+
+📌 Weekly Output Requirement
+
+By end of Month 1 you must create:
+
+10 structured prompt templates
+
+5 debugging prompts
+
+3 code-review prompts
+
+2 constraint-controlled prompts
+
+No theory-only learning. We ship every week.
+
+🔹 MONTH 2: Developer Prompt Systems
+
+Now we connect this directly to your coding growth.
+
+You will build reusable templates for:
+
+Secure authentication generation
+
+Database schema design
+
+MVC architecture planning
+
+Performance optimization
+
+Edge-case test generation
+
+Refactoring for scalability
+
+This is where your backend skill accelerates.
+
+🔹 MONTH 3: Prompt Architecture & Chaining
+
+You stop writing single prompts.
+
+You start building pipelines:
+
+Analyze problem
+
+Design architecture
+
+Generate code
+
+Critique output
+
+Optimize
+
+Produce documentation
+
+That’s prompt orchestration.
+
+🔹 MONTH 4–6: Professional Level
+
+Now we move into system thinking:
+
+Guardrails
+
+Output validation
+
+JSON enforcement
+
+Role isolation
+
+Error recovery prompts
+
+Tool-augmented prompting
+
+This is how production AI systems are built.
+
+🧠 Let Me Reset Your Identity
+
+You are not becoming:
+
+“A guy who writes better ChatGPT questions.”
+
+You are becoming:
+
+“An engineer who designs AI-powered development workflows.”
+
+That’s a market-differentiating skill set.
+
+And yes — this will drastically improve your coding clarity.

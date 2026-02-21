@@ -1,0 +1,190 @@
+🔥 Assignment #2 – Controlled Multi-Step Prompt
+
+Your task:
+
+Create a prompt template for:
+
+“Build a secure PHP login system”
+
+But this time it must:
+
+✅ Step 1 – Force AI to analyze requirements first
+✅ Step 2 – Design system architecture
+✅ Step 3 – List security considerations
+✅ Step 4 – Only then generate code
+✅ Step 5 – Perform self-review
+🧩 Required Structure
+
+Write your prompt like this:
+
+ROLE:
+...
+
+CONTEXT:
+...
+
+INSTRUCTIONS:
+Step 1:
+Step 2:
+Step 3:
+Step 4:
+Step 5:
+
+OUTPUT FORMAT:
+...
+
+CONSTRAINTS:
+...
+
+========================MyVersion===================
+
+ROLE:
+
+Act as a senior backend architect and security auditor with 10+ years of experience in PHP, MySQL,
+secure web application design, and OWASP Top 10 compliance. Think critically and evaluate both code-level and architectural decisions.
+
+CONTEXT:
+
+Project Name:  Expense Tracker
+
+Purpose:
+
+A daily-use financial tracking web application allowing users to:
+- Register and authenticate accounts
+- Add, edit, and delete expenses and income
+- Filter records by daily, monthly, and yearly views
+- View aggregated financial summaries
+- Admin panel for user management
+
+Tech Stack:
+
+- Frontend: HTML, CSS, JavaScript
+- Backend: PHP (procedural/MVC specify if applicable)
+- Database: MySQL
+- Authentication: (Specify if using sessions, JWT, etc.)
+- Password Hashing: (Specify method if known)
+- Deployment: (Local / Shared Hosting / VPS – if applicable)
+
+Requirement: 
+
+A robust login and registration system that prevents common web vulnerabilities (OWASP Top 10).
+
+INSTRUCTIONS:
+
+Step 1: Requirements Analysis:
+     -Define what datapoints are needed (Email,Password,username) and wha features are essential
+      (session management,logout,remember me,forgot Password)
+Step 2:Design system architecture:
+     -Design the Database and user table
+     -User information should store on User-tbl
+     -Primary key
+     -Column types (VARCHAR,DATETIME,INT)
+     -Prevent duplicate user entry
+     -Password should be stored as hashed
+     -Password updation property add if user forgot password
+Step 3:Security Considerations:
+     -List specific measures to prevent SQL Injection, XSS, Brute Force attacks, and Session Hijacking. Specify the hashing algorithm to be used.
+Step 4:Only then generate code.Implementation (Code)
+     -Make a clean php code for login
+     -It also include Validation,Authentication,follow a secure coding pattern
+     -Code must be simple and reusable
+     -When a new Developer checks the code it must be understandable for him.
+Step 5:self-review:
+     -Audit the generated code
+     -Check for vulnerabilities
+     -Identify any potential edge cases or minor risks and provide a final "Security Score" (1-10).
+
+OUTPUT FORMAT:
+ 
+-Requirement Summary (Bullet points)
+
+-Database Schema (SQL Code block)
+
+-Security Checklist (Table format)
+
+-Implementation (Separate code blocks for db.php, register.php, and login.php)
+
+-Audit Report (Final review comments)
+
+CONSTRAINTS:
+
+Use PDO for database interactions (No mysqli procedural).
+
+Use password_hash() and password_verify() only.
+
+No external libraries unless strictly necessary.
+
+If the user does not provide a DB name, use expense_tracker_db.
+
+====================GoodOne===================
+
+ROLE:
+Act as a senior backend architect and security engineer specializing in secure PHP authentication systems and OWASP Top 10 compliance.
+
+CONTEXT:
+Project: Expense Tracker
+Tech Stack:
+- Frontend: HTML, CSS, JavaScript
+- Backend: PHP
+- Database: MySQL
+- DB Access: PDO only
+- Default DB Name: expense_tracker_db
+
+Requirement:
+Design and implement a secure login and registration system suitable for production deployment.
+
+INSTRUCTIONS:
+
+Step 1 – Requirements Analysis:
+- Identify required user fields (email, username, password, etc.)
+- Define functional requirements (login, logout, remember me, password reset)
+- State any assumptions clearly before proceeding
+
+Step 2 – Architecture & Database Design:
+- Design normalized user table schema
+- Include PRIMARY KEY and UNIQUE constraints
+- Include proper indexing
+- Include created_at and updated_at fields
+- Prevent duplicate user registration
+- Enforce password hashing
+- Include account status management
+
+Step 3 – Security Design:
+- Prevent SQL Injection (PDO prepared statements)
+- Prevent XSS
+- Prevent CSRF
+- Prevent Brute Force attacks
+- Protect against Session Fixation & Hijacking
+- Define secure session configuration
+- Enforce password strength rules
+
+Step 4 – Implementation:
+- Generate modular PHP files (db.php, register.php, login.php)
+- Follow separation of concerns
+- No inline SQL inside HTML
+- Proper input validation and sanitization
+- Secure error handling (no information leakage)
+
+Step 5 – Self Review:
+- Audit vulnerabilities
+- Identify edge cases
+- Provide:
+    - Security Score (1–10)
+    - Maintainability Score (1–10)
+    - Production Readiness Level
+    - Improvement suggestions
+
+OUTPUT FORMAT:
+- Requirement Summary
+- Database Schema (SQL Code Block)
+- Security Checklist (Table)
+- Implementation Code Blocks
+- Final Audit Report
+
+CONSTRAINTS:
+- Use PDO only.
+- Use password_hash() and password_verify().
+- No external libraries.
+- If insufficient information is provided, state “Insufficient Information.”
+- Do not assume unspecified infrastructure.
+

@@ -1,0 +1,123 @@
+🎯 Next Step (Now We Increase Difficulty)
+
+Next assignment:
+
+Create a prompt template for:
+
+“Refactor my existing PHP code to follow MVC architecture.”
+
+It must:
+
+Analyze current code first
+
+Identify violations
+
+Propose folder structure
+
+Explain migration strategy
+
+Only then generate refactored example
+
+We’re moving from building systems → restructuring systems.
+
+===================MyVersion=================
+
+ROLE:
+Act as a senior backend architect and security auditor with 10+ years of experience in PHP, MySQL,
+secure web application design, and OWASP Top 10 compliance. Think critically and evaluate both code-level and architectural decisions.
+
+CONTEXT: 
+Expense tracker site login and registration.
+
+REQUIREMENT:
+- Refactor my existing PHP code to follow MVC architecture.
+- Seperate database queries into modal class
+- view must contain html pages and php statements for user display
+- controller be a mediator between view and modal and handle the logic
+- make sure the code is clean
+
+CODE:
+---------------------------------------example--
+
+OUTPUT FORMAT:
+- Requirement Summary (Bullet points)
+
+- provide the structure of the code
+
+- Audit Report (Final review comments)
+
+CONSTRAINTS:
+- work with MVC method only
+
+
+====================GoodOne===================
+
+ROLE:
+Act as a senior backend architect with 10+ years of experience in PHP application architecture, MVC design patterns, and scalable system design. Evaluate critically before refactoring.
+
+CONTEXT:
+Project: Expense Tracker
+Current System:
+- Built using procedural PHP
+- Login and registration implemented
+- Database interaction mixed within PHP files
+- HTML and PHP logic combined in same files
+
+Goal:
+Refactor existing login and registration system into a clean MVC architecture.
+
+CODE:
+(Paste existing code here)
+
+INSTRUCTIONS:
+
+Step 1 – Code Analysis:
+- Identify architectural violations
+- Identify tight coupling issues
+- Identify separation-of-concern problems
+- Identify security risks caused by structure
+
+Step 2 – MVC Design Proposal:
+- Define Model responsibilities
+- Define Controller responsibilities
+- Define View responsibilities
+- Propose normalized folder structure
+- Map old structure → new structure
+
+Step 3 – Migration Strategy:
+- Explain how to transition without breaking functionality
+- Identify risks during migration
+- Suggest phased implementation plan
+
+Step 4 – Refactored Implementation:
+- Provide sample Model class
+- Provide sample Controller class
+- Provide sample View file
+- Follow clean coding principles
+- No business logic inside View
+- No direct DB calls in Controller (must use Model)
+
+Step 5 – Self Review:
+- Evaluate maintainability
+- Evaluate scalability
+- Provide Architecture Score (1–10)
+- Suggest further improvements
+
+OUTPUT FORMAT:
+- Analysis Report
+- Proposed MVC Folder Structure (Tree format)
+- Responsibility Breakdown
+- Refactored Code Samples
+- Migration Roadmap
+- Final Architectural Audit
+
+CONSTRAINTS:
+- Follow strict MVC pattern.
+- Use PDO for DB access.
+- Do not assume additional frameworks.
+- If insufficient information is provided, state "Insufficient Information."
+
+
+
+
+
